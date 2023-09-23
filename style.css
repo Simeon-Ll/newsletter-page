@@ -33,26 +33,41 @@ body{
   border-radius: 30px;
 }
 
+.image{
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  height: 650px;
+  width: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 20px;
+}
 .content{
   padding: 70px 55px 0px 30px;
-  width: 500px;
+  width: 550px;
+  
 }
 
 .content > *{
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   
 }
 
 h1{
   font-size: 3.5rem;
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 900;
  
 }
 
-.content p, .wrapper p{
-  font-size: 1em;
+.content p{
+  font-size: 1.3em;
   line-height: 22px;
+  font-weight: 600;
+}
+
+.wrapper p{
+  font-size: 1.2em;
 }
 
 .content ul li::before{
@@ -62,8 +77,8 @@ h1{
 
 .content ul li:nth-child(n){
   display: flex;
-    margin-bottom: 5px;
-    font-size: 1em;
+    margin-bottom: 10px;
+    font-size: 1.3em;
 }
 
 .wrapper{
@@ -102,7 +117,7 @@ form .email-info{
 }
 
 form .email-info h3{
-  font-size: 1em;
+  font-size: 1.2em;
 }
 #error{
   color: tomato;
@@ -146,3 +161,50 @@ button:hover{
   filter: drop-shadow(0px 30px 20px rgb(248, 146, 128));
 }
 
+
+@media screen and (max-width: 900px) {
+
+  #app{
+    flex-direction: column-reverse;
+    width: 500px;
+    padding: 0;
+    
+  }
+
+  .image{
+    background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+    width: inherit;
+    background-size: contain;
+    height: 400px;
+  }
+
+  .content{
+    padding: 50px 30px;
+    border-radius: 0;
+    width: inherit;
+  }
+
+  h1{
+    font-size: 3.2em;
+  }
+
+  .content ul li:nth-child(n){
+    line-height: 30px;
+  }
+
+  button{
+    margin-top: 40px;
+  }
+
+  .wrapper{
+    height: 100vh;
+    border-radius: 0;
+    padding-top: 200px;
+    padding: 200px 30px 50px;
+  }
+
+  .wrapper button{
+    margin-top: auto;
+  }
+
+}

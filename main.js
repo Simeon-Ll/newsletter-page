@@ -1,5 +1,5 @@
 import './style.css'
-import illustration from '/assets/images/illustration-sign-up-desktop.svg'
+
 
 let user
 const subscriptionPage = `
@@ -20,13 +20,13 @@ const subscriptionPage = `
           </div>
           <input type="email" name="" id="email" placeholder="email@gmail.com">
 
-          <button type="submit" id="submit"><h3>Subscribe to monthly newsletter</h3></button>
+          <button type="reset" id="submit"><h3>Subscribe to monthly newsletter</h3></button>
             
           
         </form>
     </div>
     <div class="image">
-      <img src="${illustration}" alt="">
+      
     </div>
     </div>`
     
